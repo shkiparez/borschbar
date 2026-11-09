@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>БорщБар — сибирская кухня в Академгородке</title>
+  <meta name="description" content="БорщБар в Академгородке Новосибирска: наваристый сибирский борщ, драники, соленья и настойки собственного приготовления. Морской проспект, 22. Ежедневно 12:00–23:00.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Great+Vibes&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%23f2e8da'/%3E%3Ccircle cx='16' cy='16' r='12' fill='%23b8132f'/%3E%3Ccircle cx='15' cy='15' r='4' fill='%23fff'/%3E%3C/svg%3E">
+</head>
+<body>
+  <div class="curtain"></div>
+  <div class="cursor"></div>
+
+  <header class="header">
+    <div class="wrap header__in">
+      <a href="index.html" class="logo"><span class="logo__mark"></span><span><b>Борщ</b><i>Бар</i></span></a>
+      <nav class="nav">
+        <a href="index.html" class="is-active">Главная</a>
+        <a href="menu.html">Меню</a>
+        <a href="about.html">О ресторане</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+      <a class="header__phone" href="tel:+79665009922">+7 966 500-99-22</a>
+      <button class="burger" aria-label="Меню"><span></span><span></span></button>
+    </div>
+  </header>
+  <div class="mnav">
+    <a href="index.html" class="is-active">Главная</a>
+    <a href="menu.html">Меню</a>
+    <a href="about.html">О ресторане</a>
+    <a href="contacts.html">Контакты</a>
+    <div class="mnav__foot"><a href="tel:+79665009922" style="font:inherit">+7 966 500-99-22</a><span>Ежедневно 12:00–23:00</span></div>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <svg class="taiga" viewBox="0 0 1600 260" preserveAspectRatio="none" aria-hidden="true"></svg>
+    <div class="wrap hero__grid">
+      <div class="hero__text">
+        <span class="script hero__fade hero__brand">БорщБар</span>
+        <h1 class="h-display hero__title">
+          <span class="line"><span>Борщ, который</span></span>
+          <span class="line"><span><em class="accent">греет</em> Сибирь<span class="dot">.</span></span></span>
+        </h1>
+        <p class="lead hero__fade">Наваристый борщ на говяжьем бульоне с томлёной говядиной, домашнее сало, драники и настойки собственного приготовления.</p>
+        <div class="hero__actions hero__fade">
+          <a href="menu.html" class="btn btn--solid">Смотреть меню <span class="arr">→</span></a>
+          <a href="contacts.html" class="btn">Как добраться</a>
+        </div>
+        <ul class="hero__info hero__fade">
+          <li><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Морской проспект, 22<br>Академгородок</span></li>
+          <li><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Ежедневно<br>12:00 — 23:00</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span><a href="tel:+79665009922">+7 966 500-99-22</a><br>звоните</span></li>
+        </ul>
+      </div>
+
+      <div class="hero__visual">
+        <!-- задний план: хлеб, рюмка, чеснок, перец -->
+        <svg class="bv" viewBox="0 0 800 800" aria-hidden="true">
+          <defs>
+            <radialGradient id="shotG" cx="40%" cy="38%" r="65%">
+              <stop offset="0" stop-color="#ff6b5a"/><stop offset=".6" stop-color="#b8132f"/><stop offset="1" stop-color="#5a0614"/>
+            </radialGradient>
+            <radialGradient id="garlicG" cx="40%" cy="35%" r="70%">
+              <stop offset="0" stop-color="#fffaf0"/><stop offset="1" stop-color="#d9ccb6"/>
+            </radialGradient>
+            <filter id="breadTex" x="0" y="0" width="100%" height="100%">
+              <feTurbulence type="fractalNoise" baseFrequency="0.55" numOctaves="2" seed="9" result="t"/>
+              <feColorMatrix in="t" type="matrix" values="0 0 0 0 0.12  0 0 0 0 0.06  0 0 0 0 0.03  0 0 0 -1.4 1.05" result="d"/>
+              <feComposite in="d" in2="SourceGraphic" operator="in" result="dots"/>
+              <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="dots"/></feMerge>
+            </filter>
+            <filter id="softSh" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="8" dy="16" stdDeviation="12" flood-color="#000" flood-opacity=".65"/></filter>
+          </defs>
+          <g id="specks" data-depth="-0.5"></g>
+          <g class="side"><g data-depth="1.6">
+            <g transform="rotate(-18 120 640)" filter="url(#softSh)">
+              <rect x="30" y="580" width="170" height="125" rx="18" fill="#2a160c" stroke="#1a0b05" stroke-width="10"/>
+              <rect x="36" y="586" width="158" height="113" rx="12" fill="#3a2416" filter="url(#breadTex)"/>
+              <circle cx="80" cy="620" r="2.2" fill="#c9a06a" opacity=".55"/><circle cx="150" cy="660" r="1.8" fill="#c9a06a" opacity=".5"/><circle cx="120" cy="640" r="1.5" fill="#c9a06a" opacity=".45"/>
+            </g>
+            <g transform="rotate(8 170 700)" filter="url(#softSh)">
+              <rect x="88" y="650" width="160" height="118" rx="18" fill="#2a160c" stroke="#1a0b05" stroke-width="10"/>
+              <rect x="94" y="656" width="148" height="106" rx="12" fill="#3a2416" filter="url(#breadTex)"/>
+              <circle cx="150" cy="700" r="2" fill="#c9a06a" opacity=".5"/><circle cx="200" cy="730" r="1.6" fill="#c9a06a" opacity=".45"/>
+            </g>
+          </g></g>
+          <g class="side"><g data-depth="2.2">
+            <g filter="url(#softSh)">
+              <circle cx="690" cy="120" r="54" fill="rgba(255,255,255,.06)" stroke="rgba(255,255,255,.35)" stroke-width="2"/>
+              <circle class="liquid-glass" cx="690" cy="120" r="42" fill="url(#shotG)"/>
+              <ellipse cx="672" cy="100" rx="16" ry="8" fill="#fff" opacity=".35" transform="rotate(-35 672 100)"/>
+              <circle cx="690" cy="120" r="54" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="8"/>
+            </g>
+          </g></g>
+          <g class="side"><g data-depth="1.2">
+            <g filter="url(#softSh)">
+              <path d="M690 640 c26 -6 46 14 40 38 c-6 22 -40 30 -62 18 c-18 -10 -8 -50 22 -56z" fill="url(#garlicG)"/>
+              <path d="M700 646 c10 12 12 30 4 46" stroke="#d8c8b3" stroke-width="2" fill="none"/>
+              <path d="M650 560 L770 520" stroke="#4f8a2c" stroke-width="9" stroke-linecap="round"/>
+              <path d="M646 578 L772 548" stroke="#6aa63c" stroke-width="7" stroke-linecap="round"/>
+              <path d="M640 560 L660 572" stroke="#e8f0d8" stroke-width="10" stroke-linecap="round"/>
+            </g>
+          </g></g>
+        </svg>
+
+        <!-- тарелка -->
+        <div class="bowl-intro">
+          <div class="bowl" data-depth="0.5">
+            <svg class="bv" viewBox="0 0 800 800" aria-hidden="true">
+              <defs>
+                <radialGradient id="plateG" cx="45%" cy="42%" r="60%">
+                  <stop offset="0" stop-color="#fffaf2"/><stop offset=".75" stop-color="#efe5d6"/><stop offset="1" stop-color="#d9ccb9"/>
+                </radialGradient>
+                <radialGradient id="wellG" cx="54%" cy="56%" r="52%">
+                  <stop offset=".8" stop-color="#e9ddcb"/><stop offset="1" stop-color="#bba98f"/>
+                </radialGradient>
+                <radialGradient id="brothFallback" cx="44%" cy="40%" r="62%">
+                  <stop offset="0" stop-color="#c8202c"/><stop offset=".7" stop-color="#7a0a19"/><stop offset="1" stop-color="#3e050d"/>
+                </radialGradient>
+                <filter id="blur18" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="18"/></filter>
+                <filter id="blur5" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="5"/></filter>
+              </defs>
+              <ellipse cx="425" cy="440" rx="300" ry="296" fill="#000" opacity=".8" filter="url(#blur18)"/>
+              <circle cx="400" cy="400" r="300" fill="url(#plateG)"/>
+              <circle cx="400" cy="400" r="291" fill="none" stroke="#7a1424" stroke-width="6"/>
+              <circle cx="400" cy="400" r="286" fill="none" stroke="rgba(255,255,255,.6)" stroke-width="1.5"/>
+              <path d="M165 268 A272 272 0 0 1 300 142" stroke="#fff" stroke-width="10" stroke-linecap="round" fill="none" opacity=".75" filter="url(#blur5)"/>
+              <circle cx="400" cy="400" r="236" fill="url(#wellG)"/>
+              <circle cx="400" cy="400" r="214" fill="url(#brothFallback)"/>
+            </svg>
+            <canvas class="broth" aria-hidden="true"></canvas>
+            <svg class="bv" viewBox="0 0 800 800" aria-hidden="true">
+              <defs>
+                <radialGradient id="creamG" cx="40%" cy="35%" r="70%">
+                  <stop offset="0" stop-color="#ffffff"/><stop offset=".6" stop-color="#faf4ea"/><stop offset="1" stop-color="#e8dccd"/>
+                </radialGradient>
+                <filter id="creamLight" x="-20%" y="-20%" width="140%" height="140%">
+                  <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="3" seed="3" result="noise"/>
+                  <feGaussianBlur in="SourceAlpha" stdDeviation="14" result="dome"/>
+                  <feComposite in="noise" in2="dome" operator="arithmetic" k2=".22" k3="1" result="height"/>
+                  <feSpecularLighting in="height" surfaceScale="7" specularConstant=".85" specularExponent="24" lighting-color="#ffffff" result="spec">
+                    <feDistantLight azimuth="225" elevation="48"/>
+                  </feSpecularLighting>
+                  <feComposite in="spec" in2="SourceAlpha" operator="in" result="specIn"/>
+                  <feDiffuseLighting in="height" surfaceScale="7" diffuseConstant="1" lighting-color="#ffffff" result="diff">
+                    <feDistantLight azimuth="225" elevation="52"/>
+                  </feDiffuseLighting>
+                  <feComposite in="SourceGraphic" in2="diff" operator="arithmetic" k1="1.18" result="lit"/>
+                  <feComposite in="lit" in2="SourceAlpha" operator="in" result="litIn"/>
+                  <feComposite in="specIn" in2="litIn" operator="arithmetic" k2=".7" k3="1"/>
+                </filter>
+                <filter id="dillSh" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="2" dy="4" stdDeviation="2" flood-color="#1a0004" flood-opacity=".55"/></filter>
+                <filter id="blur3" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3"/></filter>
+                <filter id="blur9" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="9"/></filter>
+              </defs>
+              <circle cx="400" cy="400" r="215" fill="none" stroke="rgba(40,0,6,.35)" stroke-width="3"/>
+              <g class="cream">
+                <ellipse cx="412" cy="418" rx="90" ry="86" fill="#2a0007" opacity=".55" filter="url(#blur9)"/>
+                <ellipse cx="408" cy="412" rx="84" ry="80" fill="#2a0007" opacity=".35" filter="url(#blur3)"/>
+                <g filter="url(#creamLight)">
+                  <path d="M398 322 C446 314 486 346 486 396 C487 448 450 484 400 486 C350 487 316 452 316 402 C316 354 350 328 398 322Z" fill="url(#creamG)"/>
+                  <path d="M392 352 C424 346 450 366 448 394 C446 424 420 440 394 436 C368 432 352 412 356 388 C359 368 372 355 392 352Z" fill="#ffffff"/>
+                </g>
+                <path d="M350 402 C356 366 396 346 440 360" stroke="rgba(120,80,70,.2)" stroke-width="6" fill="none" stroke-linecap="round" filter="url(#blur3)"/>
+                <path d="M372 446 C402 460 440 450 460 422" stroke="rgba(120,80,70,.18)" stroke-width="6" fill="none" stroke-linecap="round" filter="url(#blur3)"/>
+                <g id="dill" filter="url(#dillSh)"></g>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <canvas class="steam" aria-hidden="true"></canvas>
+        <div class="hero__hint">коснитесь бульона</div>
+      </div>
+    </div>
+    <div class="hero__scroll">листайте<i></i></div>
+  </section>
+
+  <!-- ============ бегущая строка ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Борщ сибирский</span><span>Драники</span><span>Домашнее сало</span><span>Настойки</span><span>Студень</span><span>Грузди</span><span>Папоротник</span><span>Печёное яблоко</span>
+      <span>Борщ сибирский</span><span>Драники</span><span>Домашнее сало</span><span>Настойки</span><span>Студень</span><span>Грузди</span><span>Папоротник</span><span>Печёное яблоко</span>
+    </div>
+  </div>
+
+  <!-- ============ о нас ============ -->
+  <section class="section">
+    <div class="wrap about3">
+      <div class="about3__text">
+        <span class="eyebrow reveal">О нас</span>
+        <h2 class="h-2">Сибирская кухня, сваренная с душой<span class="dot">.</span></h2>
+        <span class="orn reveal" aria-hidden="true"></span>
+        <p class="about3__lead reveal">Борщ на говяжьем бульоне подаём как положено — со сметаной, хреном, горчицей, смальцем и бородинским хлебом.</p>
+        <p class="muted reveal">К нему — драники, соленья из «Сибирского погреба», паштет из печени кролика и настойки на клюкве, кедре, белых грибах и даже на борще.</p>
+        <a href="menu.html" class="link-arrow reveal">Открыть меню <span>→</span></a>
+      </div>
+      <div class="about3__img">
+        <div class="arch img-reveal"><img data-speed=".12" src="img/borsch-close.jpg" alt="Сибирский борщ с подачей" loading="lazy"></div>
+        <svg class="badge" viewBox="0 0 200 200" aria-hidden="true">
+          <defs><path id="circ" d="M100 100 m-78 0 a78 78 0 1 1 156 0 a78 78 0 1 1 -156 0"/></defs>
+          <circle cx="100" cy="100" r="98" fill="#b8132f"/>
+          <text font-family="Manrope" font-size="15" letter-spacing="5.2" fill="#f2e8da"><textPath href="#circ">БОРЩБАР • СИБИРСКАЯ КУХНЯ • С ДУШОЙ •</textPath></text>
+          <circle cx="100" cy="100" r="26" fill="#f2e8da"/><circle cx="96" cy="96" r="8" fill="#fff"/>
+        </svg>
+      </div>
+      <ul class="feats">
+        <li class="reveal"><svg viewBox="0 0 48 48"><path d="M8 20h32v6a16 16 0 0 1-32 0z"/><path d="M4 20h40M18 12c0-3 3-3 3-6M26 12c0-3 3-3 3-6"/></svg><div><b>Долгий бульон</b><span>Говядина томится часами — без кубиков и спешки.</span></div></li>
+        <li class="reveal reveal-d1"><svg viewBox="0 0 48 48"><rect x="12" y="14" width="24" height="28" rx="5"/><path d="M14 14v-4h20v4M18 26c3-3 9-3 12 0M18 33c3-3 9-3 12 0"/></svg><div><b>Свои соленья</b><span>Огурцы, черемша, капуста и грузди — как в погребе.</span></div></li>
+        <li class="reveal reveal-d2"><svg viewBox="0 0 48 48"><path d="M16 6h16l-2 20a6 6 0 0 1-12 0z"/><path d="M24 32v10M17 42h14M17 16h14"/></svg><div><b>Настойки руками</b><span>Шестнадцать вкусов — от клюквы с елью до борща.</span></div></li>
+        <li class="reveal reveal-d3"><svg viewBox="0 0 48 48"><path d="M24 4l9 12h-5l8 10h-6l8 10H10l8-10h-6l8-10h-5z"/><path d="M24 36v8"/></svg><div><b>Дары тайги</b><span>Кедровый орех, брусника, папоротник, белые грибы.</span></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ цифры ============ -->
+  <section class="stats">
+    <div class="wrap stats__grid">
+      <div class="reveal"><b><span data-count="510">0</span> г</b><span>сибирского борща в порции</span></div>
+      <div class="reveal reveal-d1"><b data-count="16">0</b><span>настоек на баре</span></div>
+      <div class="reveal reveal-d2"><b data-count="3">0</b><span>вида драников</span></div>
+      <div class="reveal reveal-d3"><b><span data-count="11">0</span> ч</b><span>открыты каждый день</span></div>
+    </div>
+  </section>
+
+  <!-- ============ фирменные блюда ============ -->
+  <section class="section section--alt">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow reveal">Фирменное</span>
+          <h2 class="h-2">То, ради чего <em>возвращаются</em><span class="dot">.</span></h2>
+        </div>
+        <a href="menu.html" class="btn reveal">Всё меню <span class="arr">→</span></a>
+      </div>
+      <div class="dishes">
+        <a href="menu.html#borsch" class="dish reveal">
+          <div class="dish__img"><img src="img/borsch.jpg" alt="Борщ сибирский" loading="lazy"><span class="dish__price">560 ₽</span></div>
+          <div class="dish__body"><h3 class="h-3">Борщ сибирский</h3><p>Говяжий бульон, томлёная говядина, сметана, хрен, смалец и бородинский хлеб. 510 г</p></div>
+        </a>
+        <a href="menu.html#cold" class="dish reveal reveal-d1">
+          <div class="dish__img"><img src="img/pate.jpg" alt="Паштет из печени кролика" loading="lazy"><span class="dish__price">630 ₽</span></div>
+          <div class="dish__body"><h3 class="h-3">Паштет из печени кролика</h3><p>С мочёной брусникой, пудрой из белых грибов и мармеладной свёклой. 170 г</p></div>
+        </a>
+        <a href="menu.html#cold" class="dish reveal reveal-d2">
+          <div class="dish__img"><img src="img/beet.jpg" alt="Печёная и мармеладная свёкла" loading="lazy"><span class="dish__price">490 ₽</span></div>
+          <div class="dish__body"><h3 class="h-3">Печёная и мармеладная свёкла</h3><p>Две текстуры свёклы, крем из молодого сыра, кедровый орех. 180 г</p></div>
+        </a>
+        <a href="menu.html#hot" class="dish reveal">
+          <div class="dish__img"><img src="img/fern.jpg" alt="Папоротник со сковородки" loading="lazy"><span class="dish__price">450 ₽</span></div>
+          <div class="dish__body"><h3 class="h-3">Папоротник со сковородки</h3><p>С чесноком, морковью и луком, мочёной брусникой и кедровым орехом. 220 г</p></div>
+        </a>
+        <a href="menu.html#borsch" class="dish reveal reveal-d1">
+          <div class="dish__img"><img src="img/borsch-pot.jpg" alt="Борщ богатырский" loading="lazy"><span class="dish__price">780 ₽</span></div>
+          <div class="dish__body"><h3 class="h-3">Борщ богатырский</h3><p>Тот же выверенный рецепт — для большого аппетита. 710 г</p></div>
+        </a>
+        <a href="menu.html#dessert" class="dish reveal reveal-d2">
+          <div class="dish__img"><img src="img/apple-2.jpg" alt="Печёное яблоко" loading="lazy"><span class="dish__price">470 ₽</span></div>
+          <div class="dish__body"><h3 class="h-3">Печёное яблоко с кремом</h3><p>Ванильный крем, кранч из овсяных хлопьев и кедра в корзинке из фило. 180 г</p></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ большой кадр ============ -->
+  <section class="band">
+    <div class="band__bg"><img data-speed=".25" src="img/interior-bar.jpg" alt="" loading="lazy"></div>
+    <div class="wrap band__in">
+      <span class="eyebrow reveal">Рады вам</span>
+      <h2 class="h-1">Борщ по соседству <em>с наукой</em><span class="dot">.</span></h2>
+      <p class="lead reveal">Мы в Верхней зоне Академгородка, в двух минутах от остановки «Морской проспект». Забегайте на обед между парами и семинарами — или задержитесь до вечера.</p>
+      <div class="hero__actions reveal" style="justify-content:center"><a href="about.html" class="btn btn--gold">Наша история <span class="arr">→</span></a></div>
+    </div>
+  </section>
+
+  <!-- ============ настойки ============ -->
+  <section class="section">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow reveal">Бар</span>
+          <h2 class="h-2">Настойки, которые <em>пахнут тайгой</em><span class="dot">.</span></h2>
+        </div>
+        <p class="lead reveal" style="max-width:420px">Клюква с елью, кедр с дымком, белый гриб, облепиха с имбирём — и настойка на борще со сметаной. Да, такая есть.</p>
+      </div>
+      <div class="shots">
+        <div class="shot reveal"><div class="shot__glass"><div class="shot__liquid" style="--c:#b8132f"></div></div><div class="shot__name">Борщ со сметаной</div><div class="shot__group">Борщ</div></div>
+        <div class="shot reveal reveal-d1"><div class="shot__glass"><div class="shot__liquid" style="--c:#d0283f"></div></div><div class="shot__name">Клюква ель</div><div class="shot__group">Тайга</div></div>
+        <div class="shot reveal reveal-d2"><div class="shot__glass"><div class="shot__liquid" style="--c:#a8702f"></div></div><div class="shot__name">Кедровая дымная</div><div class="shot__group">Тайга</div></div>
+        <div class="shot reveal reveal-d3"><div class="shot__glass"><div class="shot__liquid" style="--c:#c9a265"></div></div><div class="shot__name">Белый гриб</div><div class="shot__group">Тайга</div></div>
+        <div class="shot reveal"><div class="shot__glass"><div class="shot__liquid" style="--c:#6a1236"></div></div><div class="shot__name">Смородина мята</div><div class="shot__group">Огород</div></div>
+        <div class="shot reveal reveal-d1"><div class="shot__glass"><div class="shot__liquid" style="--c:#df4a2c"></div></div><div class="shot__name">Томат базилик</div><div class="shot__group">Огород</div></div>
+        <div class="shot reveal reveal-d2"><div class="shot__glass"><div class="shot__liquid" style="--c:#c2c780"></div></div><div class="shot__name">Малосольный огурец</div><div class="shot__group">Погреб</div></div>
+        <div class="shot reveal reveal-d3"><div class="shot__glass"><div class="shot__liquid" style="--c:#f2961d"></div></div><div class="shot__name">Облепиха имбирь</div><div class="shot__group">Ярмарка</div></div>
+      </div>
+      <div class="shots-note reveal">
+        <div class="big">Все настойки — <em class="accent">250 ₽</em> <span class="muted" style="font-size:.55em">/ 40 мл</span></div>
+        <a href="menu.html#bar" class="btn">Барная карта <span class="arr">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ атмосфера ============ -->
+  <section class="section section--alt">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow reveal">Атмосфера</span>
+          <h2 class="h-2">Терракотовые арки, <em>деревянные бусы</em> и тёплый свет<span class="dot">.</span></h2>
+        </div>
+      </div>
+      <div class="gallery">
+        <figure class="img-reveal"><img src="img/interior.jpg" alt="Зал" loading="lazy"><figcaption>Зал</figcaption></figure>
+        <figure class="img-reveal reveal-d1"><img src="img/ceiling.jpg" alt="Потолок с бусинами" loading="lazy"><figcaption>Потолок</figcaption></figure>
+        <figure class="img-reveal reveal-d2"><img src="img/wall.jpg" alt="Деревянная стена" loading="lazy"><figcaption>Детали</figcaption></figure>
+        <figure class="img-reveal reveal-d1"><img src="img/interior-bar.jpg" alt="Барная стойка" loading="lazy"><figcaption>Бар</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="cta">
+    <div class="cta__bg"><img data-parallax src="img/borsch-tasting.jpg" alt="" loading="lazy"></div>
+    <div class="wrap">
+      <span class="eyebrow reveal">Ждём в гости</span>
+      <h2 class="h-1">Заходите <em class="accent">на тарелку</em> борща<span class="dot">.</span></h2>
+      <p class="lead reveal">Ежедневно с 12:00 до 23:00 · Морской проспект, 22, Академгородок</p>
+      <div class="hero__actions reveal">
+        <a href="contacts.html" class="btn btn--solid">Контакты и карта <span class="arr">→</span></a>
+        <a href="tel:+79665009922" class="btn">Позвонить</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__big">Борщ<i>Бар</i></div>
+      <div class="footer__grid">
+        <div><h5>Адрес</h5><ul><li>Морской проспект, 22</li><li>Новосибирск, Академгородок</li><li class="muted">Ост. «Морской проспект»</li></ul></div>
+        <div><h5>Часы</h5><ul><li>Ежедневно</li><li>12:00 — 23:00</li></ul></div>
+        <div><h5>Связь</h5><ul><li><a href="tel:+79665009922">+7 966 500-99-22</a></li><li><a href="mailto:bb22_nsk@mail.ru">bb22_nsk@mail.ru</a></li><li><a href="https://t.me/+79665009922" target="_blank" rel="noopener">Telegram</a></li></ul></div>
+        <div><h5>Страницы</h5><ul><li><a href="index.html">Главная</a></li><li><a href="menu.html">Меню</a></li><li><a href="about.html">О ресторане</a></li><li><a href="contacts.html">Контакты</a></li></ul></div>
+      </div>
+      <div class="footer__bottom"><span>© 2026 БорщБар · Новосибирск</span><span>Чрезмерное употребление алкоголя вредит вашему здоровью</span></div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/borsch-gl.js"></script>
+</body>
+</html>

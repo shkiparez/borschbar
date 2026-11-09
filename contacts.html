@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Контакты и карта — БорщБар</title>
+  <meta name="description" content="БорщБар в Академгородке Новосибирска: наваристый сибирский борщ, драники, соленья и настойки собственного приготовления. Ежедневно 12:00–23:00.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Great+Vibes&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%23f2e8da'/%3E%3Ccircle cx='16' cy='16' r='12' fill='%23b8132f'/%3E%3Ccircle cx='15' cy='15' r='4' fill='%23fff'/%3E%3C/svg%3E">
+</head>
+<body>
+  <div class="curtain"></div>
+  <div class="cursor"></div>
+
+  <header class="header">
+    <div class="wrap header__in">
+      <a href="index.html" class="logo"><span class="logo__mark"></span><span><b>Борщ</b><i>Бар</i></span></a>
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="menu.html">Меню</a>
+        <a href="about.html">О ресторане</a>
+        <a href="contacts.html" class="is-active">Контакты</a>
+      </nav>
+      <a class="header__phone" href="tel:+79665009922">+7 966 500-99-22</a>
+      <button class="burger" aria-label="Меню"><span></span><span></span></button>
+    </div>
+  </header>
+  <div class="mnav">
+    <a href="index.html">Главная</a>
+    <a href="menu.html">Меню</a>
+    <a href="about.html">О ресторане</a>
+    <a href="contacts.html" class="is-active">Контакты</a>
+    <div class="mnav__foot"><a href="tel:+79665009922" style="font:inherit">+7 966 500-99-22</a><span>Ежедневно 12:00–23:00</span></div>
+  </div>
+
+
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow hero__fade">Контакты</span>
+      <div class="page-hero__row">
+        <h1 class="h-display hero__title" style="margin-bottom:0">
+          <span class="line"><span>Приходите</span></span>
+          <span class="line"><span><em class="accent">в гости</em></span></span>
+        </h1>
+        <div class="hero__fade"><div class="open-now"><i></i><span>Ежедневно 12:00–23:00</span></div></div>
+      </div>
+    </div>
+    <div class="page-hero__big">адрес</div>
+  </section>
+
+  <section class="section" style="padding-top:10px">
+    <div class="wrap contacts-grid">
+      <div>
+        <div class="cblock reveal">
+          <div class="cblock__label">Адрес</div>
+          <div class="cblock__val">Морской проспект, 22</div>
+          <div class="cblock__sub">Новосибирск, Академгородок (Верхняя зона), 630090</div>
+        </div>
+        <div class="cblock reveal">
+          <div class="cblock__label">Телефон</div>
+          <div class="cblock__val"><a href="tel:+79665009922">+7 966 500-99-22</a></div>
+        </div>
+        <div class="cblock reveal">
+          <div class="cblock__label">Часы работы</div>
+          <div class="cblock__val">Ежедневно<br>12:00 — 23:00</div>
+        </div>
+        <div class="cblock reveal">
+          <div class="cblock__label">Почта и соцсети</div>
+          <div class="cblock__val" style="font-size:clamp(22px,2.2vw,30px)"><a href="mailto:bb22_nsk@mail.ru">bb22_nsk@mail.ru</a></div>
+          <div class="socials" style="margin-top:18px">
+            <a href="https://t.me/+79665009922" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M21.9 4.3 18.7 19.4c-.2 1-.9 1.3-1.7.8l-4.8-3.6-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.9 8.9-8c.4-.3-.1-.5-.6-.2L6.5 13.1 1.8 11.6c-1-.3-1-1 .2-1.5L20.5 3c.9-.3 1.6.2 1.4 1.3z"/></svg>Telegram</a>
+            <a href="https://vk.com/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12.8 18.5C6 18.5 2.1 13.8 2 6h3.4c.1 5.7 2.6 8.1 4.6 8.6V6h3.2v4.9c2-.2 4-2.5 4.7-4.9h3.2c-.5 3-2.7 5.3-4.3 6.2 1.6.8 4.1 2.7 5.1 6.3h-3.5c-.8-2.4-2.7-4.3-5.2-4.5v4.5h-.4z"/></svg>ВКонтакте</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="map reveal">
+        <div id="map2gis" class="map__canvas"></div>
+        <div class="map__card">
+          <span class="logo__mark"></span>
+          <div><b>БорщБар</b><span>Морской проспект, 22 · Академгородок</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="map__btns reveal" style="margin-top:28px">
+        <a class="btn btn--solid" href="https://2gis.ru/novosibirsk/firm/70000001118020758" target="_blank" rel="noopener">Маршрут в 2ГИС <span class="arr">↗</span></a>
+        <a class="btn" href="https://yandex.ru/maps/org/borshch/8514497040/" target="_blank" rel="noopener">Яндекс Карты <span class="arr">↗</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow reveal">Как добраться</span>
+          <h2 class="h-2 reveal">Мы <em>рядом</em> с Морским проспектом</h2>
+        </div>
+      </div>
+      <div class="how">
+        <div class="reveal"><svg viewBox="0 0 32 32"><rect x="6" y="4" width="20" height="20" rx="4"/><path d="M6 15h20M10 28l2-4M22 28l-2-4"/><circle cx="11" cy="19.5" r="1.2"/><circle cx="21" cy="19.5" r="1.2"/></svg><b>Общественный транспорт</b><p>Остановка «Морской проспект» — 2 минуты пешком.</p></div>
+        <div class="reveal reveal-d1"><svg viewBox="0 0 32 32"><path d="M5 20l3-8h16l3 8v5H5z"/><circle cx="10" cy="24" r="2"/><circle cx="22" cy="24" r="2"/><path d="M5 20h22"/></svg><b>На такси</b><p>Ищите «БорщБар» в приложении — привезут ко входу.</p></div>
+        <div class="reveal reveal-d2"><svg viewBox="0 0 32 32"><circle cx="16" cy="6" r="2.5"/><path d="M16 10v8l-4 10M16 18l4 10M10 14l6-3 6 3"/></svg><b>Пешком</b><p>Верхняя зона Академгородка, в шаге от главной улицы района.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__big">Борщ<i>Бар</i></div>
+      <div class="footer__grid">
+        <div><h5>Адрес</h5><ul><li>Морской проспект, 22</li><li>Новосибирск, Академгородок</li><li class="muted">Ост. «Морской проспект»</li></ul></div>
+        <div><h5>Часы</h5><ul><li>Ежедневно</li><li>12:00 — 23:00</li></ul></div>
+        <div><h5>Связь</h5><ul><li><a href="tel:+79665009922">+7 966 500-99-22</a></li><li><a href="mailto:bb22_nsk@mail.ru">bb22_nsk@mail.ru</a></li><li><a href="https://t.me/+79665009922" target="_blank" rel="noopener">Telegram</a></li></ul></div>
+        <div><h5>Страницы</h5><ul><li><a href="index.html">Главная</a></li><li><a href="menu.html">Меню</a></li><li><a href="about.html">О ресторане</a></li><li><a href="contacts.html">Контакты</a></li></ul></div>
+      </div>
+      <div class="footer__bottom"><span>© 2026 БорщБар · Новосибирск</span><span>Чрезмерное употребление алкоголя вредит вашему здоровью</span></div>
+    </div>
+  </footer>
+
+  <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+  <script>
+    (function () {
+      if (!window.DG) return;
+      DG.then(function () {
+        var pos = [54.839162, 83.106413];
+        var map = DG.map('map2gis', { center: [54.8389, 83.1056], zoom: 17, fullscreenControl: false, scrollWheelZoom: false });
+        var icon = DG.divIcon({ className: 'bb-pin', html: '<span class="bb-pin__dot"></span><span class="bb-pin__pulse"></span>', iconSize: [44, 44], iconAnchor: [22, 22] });
+        DG.marker(pos, { icon: icon }).addTo(map)
+          .bindPopup('<b>БорщБар</b><br>Морской проспект, 22<br><a href="https://2gis.ru/novosibirsk/firm/70000001118020758" target="_blank" rel="noopener">Открыть в 2ГИС →</a>')
+          .openPopup();
+      });
+    })();
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>
